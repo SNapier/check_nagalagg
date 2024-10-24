@@ -20,7 +20,7 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 #SCRIPT DEFINITION
 cname = "check_nagalagg"
-cversion = "0.0.1"
+cversion = "0.0.2"
 appPath = os.path.dirname(os.path.realpath(__file__))
 
 
@@ -50,7 +50,7 @@ if __name__ == "__main__" :
         "-s","--starttime",
         required=True,
         default=None,
-        help="String(TIMESTAMP): The start time 'timestamp' to begin event aggreagtion."
+        help="String(SECONDS): The start time in seconds from now to begin event aggreagtion."
     ),
     #WARNING THRESHOLD
     args.add_argument(
