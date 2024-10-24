@@ -20,7 +20,7 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 #SCRIPT DEFINITION
 cname = "check_nagalagg"
-cversion = "0.0.2"
+cversion = "0.0.3"
 appPath = os.path.dirname(os.path.realpath(__file__))
 
 
@@ -171,13 +171,13 @@ if __name__ == "__main__" :
                     let = i["logentry_type"]
                     
                     #WARNING
-                    if let == "32768":
+                    if let == "32768" and ss == "HARD":
                         wps = True
                         wpscount += 1
                         plist.append(sn)
                     
                     #CRITICAL
-                    elif let == "65536":
+                    elif let == "65536" and ss == "HARD":
                         cps = True
                         cpscount += 1
                         plist.append(sn)
