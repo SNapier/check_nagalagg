@@ -5,7 +5,7 @@ from random import *
 #SNAPIER
 
 cname = "nagiosxi_plugin_helper"
-cversion = "0.0.1"
+cversion = "0.0.3"
 appPath = os.path.dirname(os.path.realpath(__file__))
 
 #TEST VALUE
@@ -134,7 +134,7 @@ def nagExit(stateid,msg):
     print(msg)
 
     #EXIT WITH THE STATEID
-    sys.exit(stateid)
+    sys.exit(int(stateid))
 
 ########################################################################################
 #GENERIC PYTHON FUNCTIONS
