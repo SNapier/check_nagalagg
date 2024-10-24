@@ -1,0 +1,16 @@
+- nagios:
+    drs:
+      usr: nagiosadmin
+      pswd: P@55word
+      url: 192.168.1.1
+      api: apikey
+    dev:
+      usr: nagiosadmin
+      pswd: P@55word
+      url: 192.168.1.1
+      api: apikey
+    prd:
+      usr: nagiosadmin
+      pswd: P@55word
+      url: 192.168.1.1
+      api: apikey
